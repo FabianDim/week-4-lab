@@ -8,17 +8,17 @@ public class PrintAndHide : MonoBehaviour
 
     private int i = 3;
     public Renderer rend;
-    private int rand;
+    private float rand;
         
     void Start()
     {
-        rand = Random.Range(150, 250);
+        rand = Random.Range(150, 251);
     }
 
     // Update is called once per frame
     void Update()
     {   
-        Debug.Log(gameObject.name + ++i);
+        Debug.Log(gameObject.name + ":" + ++i);
         if (GameObject.FindWithTag("Red") && i >= 100)
         {
             GameObject.FindWithTag("Red").SetActive(false);  
