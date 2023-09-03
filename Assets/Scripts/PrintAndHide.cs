@@ -17,6 +17,6 @@ public class PrintAndHide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameObject.name + ++i);
+        Debug.Log(gameObject.name + ":" + ++i);
     }
 }
